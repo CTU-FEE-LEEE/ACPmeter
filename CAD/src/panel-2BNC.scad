@@ -12,11 +12,11 @@ module smallFrame() {
 }
 
 module hole() {
-    color("blue") cylinder($fn=40, h=10, r=1.5);
+    color("blue") cylinder($fn=40, h=10, r=1.6);
 }
 
 module holeBNC() {
-    color("green") cylinder($fn=40, h=10, r=4.625);
+    color("green") cylinder($fn=40, h=10, r=5);
 }
 
 module object(){

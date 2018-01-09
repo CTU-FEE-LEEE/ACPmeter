@@ -12,7 +12,7 @@ module smallFrame() {
 }
 
 module hole() {
-    color("blue") cylinder($fn=20, h=10, r=1.5);
+    color("blue") cylinder($fn=20, h=10, r=1.6);
 }
 
 module object(){
