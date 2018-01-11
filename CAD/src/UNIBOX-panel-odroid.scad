@@ -1,6 +1,12 @@
 
 module body() {
-    color("Red") cube([110,55,1]); 
+    color("Red")
+    translate([2,2,0]) 
+    minkowski() {
+        $fn=30;
+        cube([110-4,55-4,1.5/2]); 
+        cylinder(r=2,h=1.5/2);
+        }  
 }
 
 module bigFrame() {
