@@ -9,6 +9,7 @@ if ! pidof sdr-widget > /dev/null; then
 	{ ./sdr-widget -r 96000 | buffer & } | ./servestream -d -p 3701
 fi
 
+cd ~/ACPmeter/SW
 if ! pidof -x ACPmeter.py > /dev/null; then
 	./ACPmeter.py > /dev/null &
 fi
